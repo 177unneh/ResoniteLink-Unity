@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{34E4CA1B-343B-5AA4-A9A6-5AD820EEDDC5}</ProjectGuid>
+    <ProjectGuid>{BD99829F-EDC5-91F5-19DE-36D4104D87C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,20 +56,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\UnityInstalls\2022.3.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\UnityInstalls\2022.3.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -1016,87 +1016,87 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{87B13BE9-E8A5-FA59-3242-DAE453E53DD1}</Project>
+      <Project>{D8D8D909-1036-4C4C-4648-CF5EF3B8F450}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
-      <Project>{C86DC13C-878C-BF5A-A8AD-13E8F15ABE18}</Project>
+      <Project>{525CA85A-9126-65B1-0C16-41B9F0C76048}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{9D860BA7-9DDA-D636-8EA2-85954FC200CD}</Project>
+      <Project>{3068462B-2060-D6D2-E0F8-19F677E463D1}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{40B9C5DF-91DA-8492-B0FB-86CE06EFB812}</Project>
+      <Project>{9ADA7297-266A-CFD9-5DD7-E713F7686380}</Project>
       <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
-      <Project>{CB79133C-E231-9B0A-A6DA-7CC6CFC127DE}</Project>
+      <Project>{F352632F-F5F0-1A54-E1D8-4A10F6DC8B7D}</Project>
       <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
-      <Project>{4B3823B3-277B-BA12-A3B9-90146EBAEBF3}</Project>
+      <Project>{A88675CB-F4DB-4F94-1467-AA4B7AC5FE64}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
-      <Project>{FFD876F8-3D11-4E86-D373-2161212F325F}</Project>
+      <Project>{672D43D2-D157-B50A-416F-1AF028D7D08A}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{9592E333-9D44-DC7D-5BE6-873AC4026951}</Project>
+      <Project>{A26CDE2B-C12A-7F3E-359C-4ACC8CA2B4E4}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{4DF302CA-10F1-B8BA-02FB-E007C965879B}</Project>
+      <Project>{200931B1-57A6-68F5-97E5-9225B90DBB47}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{D244AC9C-E496-D8F4-3BB8-35A66052AA0F}</Project>
+      <Project>{E310C5E3-29AA-4BB0-FB2F-CEC038594306}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{8EAA9ABA-A1B9-1989-2C82-FB82614A1B84}</Project>
+      <Project>{994CF3CF-2E42-43FC-F057-EA3CE04516E2}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{00AE90FA-8A3E-81B4-E026-23CB3B251180}</Project>
+      <Project>{D3C00675-C454-7643-6677-E6966695E620}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{2A6CC92F-9B00-8E00-66EB-BDD1E96BAF40}</Project>
+      <Project>{586852BB-9CED-41EF-C98A-A877343EA001}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{D1F9E8DF-6A5C-C242-FE3F-2BB482D93660}</Project>
+      <Project>{69FF0B82-BFDD-6811-C468-AC08267C8D55}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{173B766D-AF3F-4AB8-888F-40FA11948986}</Project>
+      <Project>{B32E3EB0-4704-2EFF-B1F4-2FB8FC0D7260}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{A18B1A3B-DA4D-65BC-AFD8-269E05EBF12E}</Project>
+      <Project>{08CAF891-B0E4-5482-3CCD-1D230F3FC3CD}</Project>
       <Name>Unity.VisualScripting.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{CB0B217E-ED1B-ED1C-7D09-62C7DD3589AF}</Project>
+      <Project>{041FA00D-11BE-C804-26FA-5F7F4F12F9A3}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{325AD990-F3C8-5B56-4DA5-F4398718D797}</Project>
+      <Project>{C59556D3-32A5-A37F-6556-90A36EC067CE}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{4C6E410E-07D4-0624-FF94-0259C97495FF}</Project>
+      <Project>{B5587318-9499-462C-38F7-2C82A10E55AB}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{52DEA1C2-1623-F422-EC87-2318A5B4055C}</Project>
+      <Project>{6A80EFB7-B2F0-7C06-82FB-85E4AFA49F24}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{AF7616B7-2B22-956B-EFF0-B5676C378ECC}</Project>
+      <Project>{B5FB08B3-9443-3241-87C8-24CA13EAF560}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
   </ItemGroup>

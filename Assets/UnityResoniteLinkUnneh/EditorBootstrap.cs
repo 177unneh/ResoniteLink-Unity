@@ -30,7 +30,6 @@ public class EditorBootstrap : EditorWindow
     public GameObject ROOTUnity;
     public GameObject TEMP;
 
-    // Dodane pole
     private bool internalUpdateRunning = false;
 
     [MenuItem("Window/ResoniteLink/Connection")]
@@ -44,7 +43,6 @@ public class EditorBootstrap : EditorWindow
         port = EditorPrefs.GetInt(EditorPrefPortKey, 45531);
         windowInstance = this;
         Cleanup();
-        // Zapobiegamy podwójnej subskrypcji
         Selection.selectionChanged -= OnSelectionChanged;
         Selection.selectionChanged += OnSelectionChanged;
         EditorApplication.update -= EditorUpdate;
@@ -160,7 +158,6 @@ public class EditorBootstrap : EditorWindow
     {
         EditorPrefs.SetInt(EditorPrefPortKey, port);
 
-        // Odsubskrybuj eventy zanim rozłączysz
         Selection.selectionChanged -= OnSelectionChanged;
         EditorApplication.update -= EditorUpdate;
 
@@ -173,10 +170,8 @@ public class EditorBootstrap : EditorWindow
         }
     }
 
-    // Nowy dispatcher wywoływany przez EditorApplication.update
     void EditorUpdate()
     {
-        // Nie uruchamiaj InternalUpdate jeśli już działa albo nie ma linka
         if (!internalUpdateRunning && link != null)
         {
             _ = InternalUpdateWrapper();
@@ -193,7 +188,6 @@ public class EditorBootstrap : EditorWindow
         catch (Exception ex)
         {
             Print("InternalUpdate error: " + ex);
-            // Bezpiecznie rozłączamy się po błędzie sieciowym
             Disconnect();
         }
         finally
@@ -236,7 +230,6 @@ public class EditorBootstrap : EditorWindow
         }
         GUILayout.Space(8);
 
-        // Output area
         GUILayout.Label("REPL Output:", EditorStyles.boldLabel);
         outputScroll = EditorGUILayout.BeginScrollView(outputScroll, GUILayout.Height(position.height * 0.5f));
         for (int i = 0; i < outputLines.Count; i++)
@@ -247,7 +240,6 @@ public class EditorBootstrap : EditorWindow
 
         GUILayout.Space(6);
 
-        // Input area (multiline) and controls
         GUILayout.Label("Input (Enter command):", EditorStyles.boldLabel);
         inputCommand = EditorGUILayout.TextArea(inputCommand, GUILayout.Height(Mathf.Max(60, position.height * 0.2f)));
 
@@ -264,7 +256,6 @@ public class EditorBootstrap : EditorWindow
 
         EditorGUILayout.EndHorizontal();
 
-        // Allow Ctrl+Enter (or Cmd+Enter on mac) to submit
         var current = Event.current;
         if ((current.type == EventType.KeyDown) && (current.keyCode == KeyCode.Return) &&
             (current.control || current.command))
@@ -361,7 +352,7 @@ public class EditorBootstrap : EditorWindow
                     await RedoWorld();
                     ShouldRedo = false;
                 }
-                await Task.Yield(); // Dodaj await, aby uniknąć blokowania wątku w nieskończonej pętli
+                await Task.Yield(); 
 
             }
             while (!cts.IsCancellationRequested);
@@ -417,7 +408,7 @@ public class EditorBootstrap : EditorWindow
         GetSlot getSlot = new GetSlot
         {
             SlotID = "Root",
-            Depth = 5,
+            Depth = -1,
             IncludeComponentData = true
         };
         //Assert.IsNull(link, "Link should not be null when receiving world hierarchy.");
@@ -429,7 +420,6 @@ public class EditorBootstrap : EditorWindow
     }
     GameObject GetObject(string ID)
     {
-        // Defensive: avoid ArgumentNullException from dictionary indexer and missing keys.
         if (string.IsNullOrEmpty(ID))
             return null;
 
@@ -442,7 +432,6 @@ public class EditorBootstrap : EditorWindow
         if (GameobjectXSlot.TryGetValue(gameObject, out var slot))
             return slot;
 
-        // Niefound — nie rzucamy wyjątku, tylko logujemy i zwracamy null.
         Print($"Warning: no Slot mapped for GameObject '{gameObject.name}' ({gameObject.GetType().Name}).");
         return null;
     }
@@ -507,9 +496,7 @@ public class EditorBootstrap : EditorWindow
             return;
         }
         SlotInspectorWindow.ShowWindow(slot);
-        //Selection.activeGameObject = go;
-        // Optionally, you can also ping the object in the hierarchy
-        //EditorGUIUtility.PingObject(go);
+      
     }
     void DoParentingCode()
     {
@@ -603,19 +590,16 @@ public class EditorBootstrap : EditorWindow
         if (string.IsNullOrEmpty(inputCommand))
             return;
 
-        // If a reader is waiting, deliver the command
         if (inputTcs != null && !inputTcs.Task.IsCompleted)
         {
             var cmd = inputCommand;
             inputCommand = "";
-            // Complete the TCS on the main thread
             var tcs = inputTcs;
             inputTcs = null;
             EditorApplication.delayCall += () => tcs.TrySetResult(cmd);
         }
         else
         {
-            // No REPL waiting; still echo into output
             AppendOutput($"> {inputCommand}");
             inputCommand = "";
         }
@@ -623,11 +607,9 @@ public class EditorBootstrap : EditorWindow
 
     void AppendOutput(string text)
     {
-        // Ensure UI update happens on main thread
         if (!EditorApplication.isPlayingOrWillChangePlaymode)
         {
             outputLines.Add(text);
-            // scroll to bottom
             outputScroll.y = float.MaxValue;
             Repaint();
         }
@@ -645,7 +627,6 @@ public class EditorBootstrap : EditorWindow
     static void Print(object msg)
     {
         Debug.Log("[ResoniteLinkUnneh] " + msg);
-        // Also show in window if available
         if (windowInstance != null)
             windowInstance.AppendOutput(msg?.ToString() ?? "");
     }

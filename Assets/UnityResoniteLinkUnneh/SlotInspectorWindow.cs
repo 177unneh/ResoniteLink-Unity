@@ -11,9 +11,7 @@ public class SlotInspectorWindow : EditorWindow
 {
     Slot currentSlot;
     Vector2 scroll;
-    // przechowuj edytowalne JSONy dla komponentów (klucz: indeks komponentu)
     Dictionary<int, string> componentJsonCache = new Dictionary<int, string>();
-    // stany foldout dla komponentów (klucz: indeks komponentu)
     Dictionary<int, bool> componentFoldouts = new Dictionary<int, bool>();
 
     static JsonSerializerOptions jsonOptions = new JsonSerializerOptions
@@ -51,7 +49,6 @@ public class SlotInspectorWindow : EditorWindow
 
         EditorGUILayout.Space();
 
-        // Transformy
         EditorGUILayout.LabelField("Transform (Resonite):", EditorStyles.boldLabel);
         if (currentSlot.Position != null)
             EditorGUILayout.LabelField("Position", JsonSerializer.Serialize(currentSlot.Position.Value, jsonOptions));
@@ -62,27 +59,22 @@ public class SlotInspectorWindow : EditorWindow
 
         EditorGUILayout.Space();
 
-        // Komponenty
         EditorGUILayout.LabelField("Components:", EditorStyles.boldLabel);
         if (currentSlot.Components != null)
         {
             int index = 0;
             foreach (var item in currentSlot.Components)
             {
-                // Dodaj domyœlny stan foldout, jeœli nie istnieje
                 if (!componentFoldouts.ContainsKey(index))
                     componentFoldouts[index] = true;
 
-                // Foldout dla komponentu
                 componentFoldouts[index] = EditorGUILayout.Foldout(componentFoldouts[index], item.ComponentType ?? $"Component {index}", EditorStyles.foldout);
                 if (componentFoldouts[index])
                 {
                     foreach (var Syncs in item.Members)
                     {
-                        // Renderujemy ka¿dy wiersz w poziomie: kontrolka (bez przycisku Select, bez highlightu)
                         GUILayout.BeginHorizontal();
 
-                        // Syncs.Key = nazwa pola, Syncs.Value = obiekt pola np. Field_bool, Field_string, Field_float3 itd.
                         var memberName = Syncs.Key;
                         var fieldObj = Syncs.Value;
                         if (fieldObj == null)
@@ -93,9 +85,8 @@ public class SlotInspectorWindow : EditorWindow
                         }
 
                         var fType = fieldObj.GetType();
-                        var tName = fType.Name; // np. "Field_bool", "Field_string", "Field_float3"
+                        var tName = fType.Name; //  "Field_bool", "Field_string", "Field_float3" etc
 
-                        // Pobierz PropertyInfo dla 'Value' jeœli istnieje
                         var valueProp = fType.GetProperty("Value", BindingFlags.Public | BindingFlags.Instance);
                         object currentVal = null;
                         if (valueProp != null)
@@ -103,7 +94,6 @@ public class SlotInspectorWindow : EditorWindow
                             currentVal = valueProp.GetValue(fieldObj);
                         }
 
-                        // Obs³uga najczêstszych typów z wykrywaniem zmiany wartoœci
                         if (tName == "Field_bool" && valueProp != null)
                         {
                             bool oldVal = false;
@@ -207,7 +197,6 @@ public class SlotInspectorWindow : EditorWindow
                         }
                         else
                         {
-                            // Fallback: poka¿ jako JSON (nieedytowalne)
                             string json = "<unserializable>";
                             try { json = JsonSerializer.Serialize(currentVal, jsonOptions); } catch { json = currentVal?.ToString() ?? "<null>"; }
                             EditorGUILayout.LabelField(memberName, json);
@@ -228,20 +217,14 @@ public class SlotInspectorWindow : EditorWindow
         EditorGUILayout.EndScrollView();
     }
 
-    // Wywo³ywane gdy wartoœæ cz³onka komponentu siê zmieni³a
     void OnMemberValueChanged(int componentIndex, string memberKey, object oldValue, object newValue)
     {
-        // Krótki log — mo¿na tu wys³aæ update do serwera / oznaczyæ slot jako zmieniony / zapisaæ undo itp.
         Print($"Member changed — component {componentIndex} member '{memberKey}': {ToShortString(oldValue)} -> {ToShortString(newValue)}");
         UpdateComponent updateComponent = new UpdateComponent();
         updateComponent.Data = currentSlot.Components[componentIndex];
         updateComponent.Data.Members[memberKey] = currentSlot.Components[componentIndex].Members[memberKey];
-        //EditorBootstrap.link?.UpdateComponent(updateComponent);
         EditorBootstrap.windowInstance.UpdateComponentqueue.Enqueue(updateComponent);
-        // Przyk³ad: odœwie¿ cache json jeœli potrzebujesz
         componentJsonCache.Remove(componentIndex);
-
-        // TODO: jeœli chcesz wysy³aæ update do Resonite (link.UpdateComponent itd.) — dodam to na ¿yczenie.
     }
 
     static string ToShortString(object o)
@@ -252,7 +235,6 @@ public class SlotInspectorWindow : EditorWindow
         return o.ToString();
     }
 
-    // Pomocnicze funkcje refleksyjne do odczytu/zapisu pól x,y,z,w w strukturach float3/floatQ
     static float GetFloatMember(object obj, string memberName)
     {
         if (obj == null) return 0f;
@@ -289,7 +271,6 @@ public class SlotInspectorWindow : EditorWindow
     static void Print(object msg)
     {
         Debug.Log("[SlotInspector] " + msg);
-        // dodatkowo: append to EditorBootstrap output jeœli dostêpne
         if (EditorBootstrap.windowInstance != null)
             EditorBootstrap.windowInstance?.GetType()
                 .GetMethod("AppendOutput", BindingFlags.Instance | BindingFlags.NonPublic)?

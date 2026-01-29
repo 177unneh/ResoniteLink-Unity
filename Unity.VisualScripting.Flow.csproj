@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{52DEA1C2-1623-F422-EC87-2318A5B4055C}</ProjectGuid>
+    <ProjectGuid>{6A80EFB7-B2F0-7C06-82FB-85E4AFA49F24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualScripting.Flow</AssemblyName>
@@ -56,20 +56,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\wojas\Downloads\BRAIJAN\UnityTest2\ResoniteLink-Unity\Assets\Packages\System.Text.Json.10.0.0\analyzers\dotnet\roslyn4.0\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\UnityInstalls\2022.3.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\UnityInstalls\2022.3.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -1397,7 +1397,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{D1F9E8DF-6A5C-C242-FE3F-2BB482D93660}</Project>
+      <Project>{69FF0B82-BFDD-6811-C468-AC08267C8D55}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
   </ItemGroup>
