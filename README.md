@@ -10,7 +10,7 @@ You can for example change lighting power or position.
 
 Limitations:
   - No actuall render so no mesh visible only empty gameobjects, becouse resonite link does not give me ANY MESH or TEXTURE data i cannot display them.
-  - Currently i cannot as I make it to work correctly to add components, i cannot make a list cuz i cant get AllComponentList in resonitelink
+  - Currently i cannot as I make it to work correctly to add components, i cannot make a list cuz i cant get AllComponentList in resonitelink (I think i found them how to do it actually but it crashes unity :c )
   - Moving Parent in unity inspector does not give it.
 
 Broken Things (Todo fix):
@@ -25,6 +25,7 @@ This was too first project in unity editor as plugin so pls if you see or have t
 Also first time working with ResoniteLink and actually making some Github Repository ;w;
 
 I didnt see anyone do it so i decited to do it myself :P
+
 
 Youtube video: https://youtu.be/aq_SUEpTjhw
 ^^ if someone wants to see it works
