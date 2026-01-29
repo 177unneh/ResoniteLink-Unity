@@ -12,9 +12,11 @@ Limitations:
   - No actuall render so no mesh visible only empty gameobjects, becouse resonite link does not give me ANY MESH or TEXTURE data i cannot display them.
   - Currently i cannot as I make it to work correctly to add components, i cannot make a list cuz i cant get AllComponentList in resonitelink
   - Moving Parent in unity inspector does not give it.
+
+Broken Things (Todo fix):
+  - Sometimes the Gameobject Active is settings itself to False ??
   - RedoWorld Its kinda broken it does not sync Unity with resolink.
   - ENUMS DOES NOT WORK 😭!!!
-
 
 This was too first project in unity editor as plugin so pls if you see or have tips I like to hear them...
 Also first time working with ResoniteLink and actually making some Github Repository ;w;
