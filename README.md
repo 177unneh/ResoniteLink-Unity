@@ -25,3 +25,6 @@ This was too first project in unity editor as plugin so pls if you see or have t
 Also first time working with ResoniteLink and actually making some Github Repository ;w;
 
 I didnt see anyone do it so i decited to do it myself :P
+
+Youtube video: https://youtu.be/aq_SUEpTjhw
+^^ if someone wants to see it works
