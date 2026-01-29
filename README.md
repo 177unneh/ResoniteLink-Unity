@@ -9,7 +9,7 @@ Supports :
 You can for example change lighting power or position.
 
 Limitations:
-  - No actuall render, becouse resonite link does not give me ANY MESH or TEXTURE data i cannot display them.
+  - No actuall render so no mesh visible only empty gameobjects, becouse resonite link does not give me ANY MESH or TEXTURE data i cannot display them.
   - Currently i cannot as I make it to work correctly to add components, i cannot make a list cuz i cant get AllComponentList in resonitelink
   - Moving Parent in unity inspector does not give it.
   - RedoWorld Its kinda broken it does not sync Unity with resolink.
