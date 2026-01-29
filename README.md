@@ -15,7 +15,7 @@ Limitations:
 
 Broken Things (Todo fix):
   - Sometimes the Gameobject Active is settings itself to False ??
-  - RedoWorld Its kinda broken it does not sync Unity with resolink.
+  - RedoWorld Its kinda broken it does not sync Unity with resolink. AFTER being connected and added something like new object thru resonite.. It does not show up
   - ENUMS DOES NOT WORK 😭!!!
 
 Todo : 
