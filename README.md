@@ -18,6 +18,9 @@ Broken Things (Todo fix):
   - RedoWorld Its kinda broken it does not sync Unity with resolink.
   - ENUMS DOES NOT WORK 😭!!!
 
+Todo : 
+  - Able to import from unity to reso
+  - Able to see world meshes from resonite -> Unity. (When possible 😢)
 This was too first project in unity editor as plugin so pls if you see or have tips I like to hear them...
 Also first time working with ResoniteLink and actually making some Github Repository ;w;
 
